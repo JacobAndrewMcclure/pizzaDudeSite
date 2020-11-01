@@ -1,0 +1,252 @@
+body {
+    background-color: #e85d04;
+    background-image: linear-gradient(#6a040f, #e85d04);
+    background-repeat: no-repeat;
+}
+p {
+    font-family: "Montserrat", ari;
+    font-size: 1.3em;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+}
+button {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;;
+}
+/*Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mainLogo {
+    display: flex;
+    float: left;
+    padding-left: 5%;
+}
+.mainLogo h5 a{
+    text-decoration: none;
+    color: silver;
+    font-size: 2em;
+    font-family: "Anton", Verdana, Geneva, Tahoma, sans-serif;
+}
+.mainLogo h5:hover {
+    background-color: rgba(153, 4, 4, 0.5);
+}
+.menuSelection {
+    display: flex;
+    justify-content: right;
+    float: right;
+    padding-right: 5%;
+}
+.menuSelection ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+}
+.menuSelection ul li {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menuSelection ul li a {
+    text-decoration: none;
+    color: silver;
+    font-size: 1.3em;
+    margin: 10px;
+}
+.menuSelection li a:hover {
+    background-color: rgba(153, 4, 4, 0.5);
+}
+
+/*Contactless & order online section*/
+.contactOrder {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contactless {
+    text-align: center;
+    margin: auto;
+}
+.contactless p {
+    font-size: 1.4em;
+}
+.orderOnline {
+    margin: auto;
+}
+.orderOnline button {
+    font-size: 1.3em;
+    padding: 7px;
+    border-radius: 10%;
+}
+.orderOnline button:hover {
+    background-color: rgba(153, 4, 4, 0.5);
+    cursor: pointer;
+}
+.orderOnline button:active {
+    transform: translate(4px);
+}
+/*specials images*/
+.specialImages {
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainImage img{
+    max-width: 350px;
+}
+.sideImages {
+    margin: auto;
+}
+.sideImages img{
+    max-width: 250px;
+}
+/*Promo text*/
+.promoText {
+    text-align: center;
+    font-size: 1em;
+}
+/*page buttons*/
+.pageButtons {
+    text-align: center;
+}
+.pageButtons button {
+    margin: 20px 75px 20px 75px;
+    font-size: 1.2em;
+    border-radius: 12%;
+    width: 100px;
+}
+.pageButtons button:hover {
+    background-color: rgba(153, 4, 4, 0.5);
+    cursor: pointer;
+}
+.pageButtons button:active {
+    transform: translate(4px);
+}
+/*About text*/
+.aboutUs {
+    text-align: center;
+    font-size: 1em;   
+}
+/*MENU Page*/
+/*column text*/
+.columnText {
+    display: flex;
+    justify-content: space-around;
+}
+.orderItem {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.orderItem button {
+    margin: 5px;
+    border-radius: 10%;
+}
+.orderItemBtn:hover {
+    background-color: rgba(153, 4, 4, 0.5);
+    cursor: pointer;
+}
+.orderItemBtn:active {
+    transform: translate(4px);
+}
+.specialOrder {
+    text-align: center;
+}
+.specialOrder button {
+    Width: 125px;
+    height: 50px;
+    border-radius: 10%;
+}
+/*Coupon & location layout*/
+/*Both columns*/
+.bothColumns {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*lef side*/
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftColumnHeadline {
+    text-align: center;
+    padding: 2em;
+} 
+.leftColumnPic {
+    margin: auto;
+    padding: 2em;
+}
+.leftColumn img {
+    max-width: 300px;
+}
+/*Right side*/
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+}
+.rightColumn div {
+    padding: 2em;
+}
+/*Phone layouts*/
+@media screen and (max-width: 900px) {
+/*Navigation*/
+    nav {
+        margin: 20px 10px 0px 10px;
+    }
+    .menuSelection ul li a {
+        margin: 0px;
+    }
+    .mainLogo {
+        padding: 0px 0px 0px 10px;
+    }
+    .menuSelection {
+        padding: 0px;
+    }
+/*Homepage*/
+    .contactOrder {
+        flex-direction: column;
+    }
+    .specialImages {
+        flex-direction: column;
+        justify-content: none;
+    }
+    .specialImages :nth-child(1) {order: 2;}
+    .specialImages img {
+        padding: 1em;
+    }
+    .mainImage {
+        display: flex;
+        justify-content: center;
+    }
+    .mainImage img {
+        max-width: 250px;
+    }
+    
+    /*Order page*/
+    .columnText {
+        flex-direction: column;
+    }
+    /*Coupons & location page*/
+    .bothColumns {
+        flex-direction: column;
+    }
+    /*page buttons*/
+    .pageButtons {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .pageButtons button {
+        margin: 20px 0px 20px 0px;
+    }
+}
